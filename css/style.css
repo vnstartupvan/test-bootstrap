@@ -1,0 +1,109 @@
+/* Hạn chế của bootstrap, 
+các thuộc tính bootstrap ko chỉnh đc:
+  - font size
+  - hover effect
+  - width, height (px)
+*/
+* {
+  box-sizing: border-box;
+}
+.header .navbar-brand {
+  font-size: 35px;
+}
+.header {
+  background: #35a22c;
+}
+.header .nav-link {
+  font-size: 18px;
+  position: relative;
+}
+.header .nav-link:hover {
+  color: #35a22c !important;
+}
+
+.header .nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #35a22c;
+  transition: all 0.4s;
+}
+
+.header .nav-link:hover::after {
+  width: 100%;
+}
+
+.slider .carousel-item > img {
+  height: 900px;
+}
+
+.slider .carousel-caption img {
+  width: 200px;
+}
+/* cach cang giua phan tu */
+.carousel-caption {
+  bottom: 50%;
+  /* translate 50% tinh theo kich thuoc cua no */
+  transform: translateY(50%);
+}
+.slider .carousel-indicators {
+  margin-bottom: 80px;
+}
+.slider .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.slider .carousel-indicators .active {
+  background-color: #35a22c;
+}
+/* portfolio */
+.portfolio .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  margin:0px 10px;
+
+}
+.portfolio .nav-link.active {
+  background-color: #35a22c;
+  border: 1px solid #35a22c;
+}
+.portfolio-header {
+  text-align: center;
+  margin-top: 48px;
+}
+.portfolio-main .nav {
+  justify-content: center;
+}
+
+.tab-content .item {
+  border-radius: 15px;
+}
+
+.tab-content .item h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.tab-content .item p {
+  font-size: 15px;
+}
+.tab-content .item .info {
+  border-bottom-left-radius:15px ;
+  border-bottom-right-radius:15px ;
+  border-top: none;
+  transition: all 0.4s;
+}
+.tab-content .item:hover .info {
+  color: #35a22c;
+  border: 1px solid #35a22c;
+  border-top: none;
+}
+
+/* responsive */
+@media screen and (max-width:1200px) {}
+@media screen and (max-width:992px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:576px) {}
